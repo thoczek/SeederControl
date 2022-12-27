@@ -36,9 +36,9 @@ void setup() {
 //--------------------------------------------------------------
 void loop() {
   //Read inputs
-  BtnSwitch=digitalRead(4);
-  BtnResetBuz=digitalRead(5);
-  SensorReserve=digitalRead(14);
+  BtnSwitch=!digitalRead(4);
+  BtnResetBuz=!digitalRead(5);
+  SensorReserve=!digitalRead(14);
   //--------------------------------------------------------------
   //Buzzer section
   if(SensorReserve && !SensorReserve_LastState)
